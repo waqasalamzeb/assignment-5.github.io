@@ -1,98 +1,110 @@
-//1) Perform alert() example?
-alert('Assalamualikum')
-
-//2Perform example of variables of string?
-var fName="Waqas";
-var lName="Zeb"
-var fullName=(fName +lName)
-document.write(fullName)
-document.write("<br");
-
-//3) Perform example of variables of number?
-
-var num1=5;
-var num2=20;
-var res=(num1+num2)
-document.write(res)
-document.write("<br>");
-
-
- 
-// 4Perform example of familiar operators?
- //Familiar operator with addition
-document.write(20+5)
+//1) Perform Prompt with example?
+var example=prompt("Enter anything")
+document.write(example)
 document.write("<br>")
 
-//Familiar operator with subtraction
-document.write(20-5)
-document.write("<br>")
 
-//Familiar operator with multiplication
-document.write(20*5)
-document.write("<br>")
-
-//Familiar operator with diviaion
-document.write(20%5)
-document.write("<br>")
-
-//Unfimiliar Operators without bodmas//
-var num1=5;
-var num2=6;
-var num3=7;
-var num4=8;
-var res= (++num1 + num2++ + num1++ + num4++ + num3)
-document.write(res)
-document.write("<br>")
-/*
-solution
-(++5 + 6++ +5++ + 8++ +7)
-(6+6+6+8+7)
-Ans=33
-*/
-//Unfimiliar Operator with bodmas//
-var num1=5;
-var num2=6;
-var num3=7;
-var num4=8;
-var res= (++num1*num2++ + num1++ + num4++ % num3 + --num3)
-document.write(res)
-document.write("<br>")
-/*
-solution
-(++5*6++) +5++ + (8++  /7+ --7)
-6*6+6+8/7+--7
-(8/7+6*6+6+6)
-Ans=49
-
-*/
-
-var num1=5;
-var num2=6;
-var res=(++num1 +num1++ + num2++ + num1++ + num1)
-document.write(res)
-document.write("<br>")
- 
-/*
-Solution
-(++5 +5++ +6++ +5++ +5)
-(6+6+6+7+8)
-            
-*/
-
-//7Perform if & else-if example?
-
-var signal=prompt("Enter color")
-if(signal=="red"){
-  document.write("Stop")
+//2)How to parse prompt value in numbers//
+var num=prompt("Enter a number")
+if (num>=!0){
+  document.write("true")
   }
-else if (signal=="yellow"){
-    document.write("Start you engine")
-    }
-else if(signal=="green"){
-
-    document.write("Go")
-
-    }
 else{
-  document.write("Wrong input")
+  document.write("false")
   }
+
+
+//3)What is comparison operators? Define each operator with example?
+ 
+//example of >//
+ 7>6;
+ alert(true)
+ //example of >//
+
+ //example of <//
+ 7<6;
+ alert(true)
+ //example of <//
+
+
+ //example of ==//
+ 6==6;
+ alert(true)
+ //example of ==//
+
+ //example of ===//
+  "6"==6;
+ alert(false)
+ //example of ==//
+
+ //example of !=//
+ "6"==6;
+ alert(false)
+ //example of ==//
+
+
+
+ 
+
+
+//4)What is IF statement define with comparison operator example?//
+
+//example with greater than operator//
+var number1=7;
+var number2=6;
+if(number1>number2){
+    document.write("7 is greater")
+}
+document.write("<br>")
+
+//example with less than operator//
+var number1=5;
+var number2=6;
+if(number1<number2){
+    document.write("5 is lesser")
+}
+document.write("<br>")
+
+//example with greater than equalsto operator//
+var number1=7;
+var number2=6;
+if(number1>=number2){
+    document.write("7 is greater than 6 but not equalsto 6")
+}
+document.write("<br>")
+
+//example with less than equalsto operator//
+var number1=6;
+var number2=7;
+if(number1<=number2){
+    document.write("6 is lesser than 7 but not equalsto 7")
+}
+document.write("<br>")
+
+//example with strick comparison//
+var number1="6";
+var number2=6;
+if(number1===number2){
+    document.write("statement is false")
+}
+document.write("<br>")
+
+//example with notequalsto comparison//
+var number1=7;
+var number2=6;
+if(number1!=number2){
+    document.write("statement is false")
+}
+document.write("<br>")
+
+//5) What is IF ELSE STATEMENT define with example?//
+
+var age = prompt("Enter your age")
+if (age >= 18) {
+    document.write("You are an adult")
+}
+else {
+    document.write("You are a child")
+}
+document.write("<br>")
+
